@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Jain · Competitive & Cloud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', system-ui, sans-serif; }
+        body {
+            background: #fafffb;
+            background-image: radial-gradient(circle at 30% 40%, rgba(219, 234, 254, 0.25) 0%, transparent 35%),
+                              radial-gradient(circle at 80% 70%, rgba(191, 219, 254, 0.2) 0%, transparent 40%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.9);
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.03);
+        }
+        .skill-chip {
+            background: white;
+            border: 1px solid #e9edf4;
+            padding: 0.5rem 1.2rem;
+            border-radius: 9999px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1e2b3c;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+            transition: 0.1s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        .skill-chip:hover {
+            border-color: #3b82f6;
+            color: #1e3a8a;
+            background: #fafcff;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <main class="max-w-5xl mx-auto px-4 py-8 md:py-12">
+
+        <!-- HERO -->
+        <div class="glass-card rounded-3xl p-8 md:p-12 mb-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-sm border-4 border-white/90">
+    <img src="frame.jpg" 
+         alt="Arpit Jain"
+         class="w-full h-full object-cover">
+</div>
+                <div class="text-center md:text-left">
+                    <span class="text-sm font-semibold text-blue-600 bg-blue-50/90 px-4 py-1.5 rounded-full">Competitive · Cloud Computing</span>
+                    <h1 class="text-4xl md:text-5xl font-bold mt-4 tracking-tight">
+                        I'm <span class="text-blue-600">Arpit Jain</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mt-3 max-w-xl">
+                        I turn complex problems into elegant, high-performance web experiences – combining the logic of a competitive programmer with the creativity of a cloud architect.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
+                        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-7 py-3 rounded-full shadow-sm transition">View My Work</a>
+                        <a href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovVmVyc2lvbiAvMS41Ci9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzMgMCBSXQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDIgMCBSCi9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCi9SZXNvdXJjZXMgPDwKL0ZvbnQgPDwKL0YxIDQgMCBSCj4+Cj4+L0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL1RpbWVzLVJvbWFuCj4+CmVuZG9iago1IDAgb2JqCjw8IC9MZW5ndGggNTAwID4+CnN0cmVhbQpCVEVYCl5kIDAuMDAwIFRmCjEuMDAwIDAuMDAwIDAuMDAwIHJnCjAuMDAwIDAuMDAwIDAuMDAwIHJnCjAuMDAwIGcKMzAgNzQyIFRkCihBcnBpdCBKYWluIENWKSBUagogOVRkCihbRXh0cmFjdCBmcm9tIHlvdXIgcHJvdmlkZWQgY29udGVudF0pIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDEwIDAwMDAwIG4gCjAwMDAwMDAwNTggMDAwMDAgbiAKMDAwMDAwMDExNSAwMDAwMCBuIAowMDAwMDAwMjM3IDAwMDAwIG4gCjAwMDAwMDAzMDQgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgo0ODAKJSVFT0YK" 
+                           download="Arpit_Jain_CV.pdf" 
+                           class="border border-gray-200 bg-white/90 hover:bg-white text-gray-800 font-medium px-7 py-3 rounded-full shadow-sm transition cursor-pointer">
+                            My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTRO + FOCUS (About Me with school percentages added) -->
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="glass-card rounded-3xl p-6 md:col-span-2">
+                <h2 class="text-2xl font-bold mb-3">Arpit Jain <span class="text-blue-500 text-xl font-normal ml-2">Cloud Computing · Competitive Programmer</span></h2>
+                <p class="text-gray-700 leading-relaxed">
+                    I build secure, scalable cloud infrastructure and web applications with a focus on performance. I enjoy solving challenging problems through code and continuously learning new technologies to improve my craft.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+                    <div><p class="text-xs uppercase tracking-wide text-gray-500">Focus</p><p class="font-semibold">Cloud & Web</p></div>
+                    <div><p class="text-xs uppercase tracking-wide text-gray-500">Skills</p><p class="font-semibold">Cloud Computing</p></div>
+                    <div><p class="text-xs uppercase tracking-wide text-gray-500">Speciality</p><p class="font-semibold">Problem Solving</p></div>
+                </div>
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <a href="#projects" class="text-blue-600 font-medium border-b-2 border-blue-200 hover:border-blue-600 pb-0.5 transition">View Projects →</a>
+                    <a href="#" class="text-blue-600 font-medium border-b-2 border-blue-200 hover:border-blue-600 pb-0.5 transition">Get in Touch →</a>
+                </div>
+            </div>
+            <!-- Right card: About Me with school percentages (from CV) -->
+            <div class="glass-card rounded-3xl p-6">
+                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">📌 About Me</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    I'm a Computer Science Engineering student at Lovely Professional University (CGPA 7.24) with a strong passion for software development and competitive programming. I focus on building efficient, reliable, and user-centric applications while continuously enhancing my technical and problem-solving skills.
+                </p>
+                <p class="text-gray-700 text-sm leading-relaxed mt-3">
+                    I enjoy creating user-focused applications and exploring innovative solutions that blend performance with great design.
+                </p>
+                <!-- school marks (as requested) -->
+                <div class="mt-4 text-sm border-t border-blue-100/40 pt-3">
+                    <p class="font-medium text-blue-700">📊 Academic percentages:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
+                        <li><span class="font-medium">Intermediate (PCM):</span> 86%</li>
+                        <li><span class="font-medium">Matriculation:</span> 84.2%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <h2 class="text-3xl font-bold">📋 My Skills</h2>
+                <span class="text-sm bg-blue-50/90 text-blue-700 px-4 py-2 rounded-full">Modern Applications | Cloud & Systems</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5">
+                <span class="skill-chip">C++</span>
+                <span class="skill-chip">Python</span>
+                <span class="skill-chip">C</span>
+                <span class="skill-chip">Java</span>
+                <span class="skill-chip">MySQL</span>
+                <span class="skill-chip">SQL</span>
+                <span class="skill-chip">AWS Academy</span>
+                <span class="skill-chip">AWS (VPC, EC2, RDS)</span>
+                <span class="skill-chip">Git</span>
+                <span class="skill-chip">GitHub</span>
+                <span class="skill-chip">JavaScript</span>
+            </div>
+
+            <div class="mt-8 pt-2">
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">🫱🏻‍🫲🏻 Soft skills</h3>
+                <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-gray-700">
+                    <span class="flex items-center gap-1"><span class="text-blue-600 text-xl leading-3">•</span> Team Collaboration</span>
+                    <span class="flex items-center gap-1"><span class="text-blue-600 text-xl leading-3">•</span> Leadership</span>
+                    <span class="flex items-center gap-1"><span class="text-blue-600 text-xl leading-3">•</span> Problem Solving</span>
+                    <span class="flex items-center gap-1"><span class="text-blue-600 text-xl leading-3">•</span> Quick Learner</span>
+                    <span class="flex items-center gap-1"><span class="text-blue-600 text-xl leading-3">•</span> Communication</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <h2 class="text-3xl font-bold mb-5" id="projects">My Work</h2>
+
+        <!-- AI Poem -->
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-wrap items-start gap-4">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100/60 rounded-2xl p-5 w-full md:w-64 h-36 flex items-center justify-center border border-white/60 shadow-inner">
+                    <span class="text-3xl font-black text-blue-800 tracking-tight">AI · Poem</span>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <h3 class="text-2xl font-bold">AI Chatbot For Poem Generation</h3>
+                        <span class="bg-blue-100/80 text-blue-800 text-xs px-3 py-1 rounded-full">Google Gemini</span>
+                    </div>
+                    <p class="text-gray-600 mt-2 max-w-2xl">
+                        <span class="font-semibold">AI Chatbot: Pioneering creative text.</span> Built an intelligent poem-generation platform by integrating the Google Gemini API, boosting creative content output by 50% through dynamic LLM responses and a visually engaging interface with themes.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="bg-black text-white text-sm px-5 py-2 rounded-full shadow-md">✨ TRY FREE ASSESSMENT</span>
+                        <span class="border border-gray-200 bg-white/90 text-sm px-5 py-2 rounded-full shadow-sm">FOR EXAMINERS</span>
+                        <span class="border border-gray-200 bg-white/90 text-sm px-5 py-2 rounded-full shadow-sm">FOR CANDIDATES</span>
+                    </div>
+                    <div class="flex gap-6 mt-5">
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">View Project →</a>
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">GitHub Link →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multi Tier VPC -->
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-wrap gap-4 items-start">
+                <div class="bg-gray-50/90 rounded-2xl p-5 w-full md:w-64 border border-gray-200 flex flex-col items-center">
+                    <span class="text-sm font-mono text-gray-400">VPC · ALB · NAT</span>
+                    <span class="text-2xl font-bold text-gray-800 mt-1">Multi Tier</span>
+                    <span class="text-xs bg-green-100/80 text-green-800 px-3 py-1 rounded-full mt-2">AWS Architecture</span>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3">
+                        <h3 class="text-2xl font-bold">Multi Tier VPC</h3>
+                        <span class="text-xs bg-gray-200/80 px-3 py-1 rounded-full">private · public subnets</span>
+                    </div>
+                    <p class="text-gray-700 mt-1"><span class="font-semibold">Multi Tier VPC: Your window to secure cloud</span> — Designed a secure Multi-Tier AWS VPC Architecture with ALB in public subnets, private EC2, and isolated RDS MySQL, reducing attack exposure by 80%.</p>
+                    <div class="flex gap-4 mt-3 text-sm font-medium text-gray-600">
+                        <span>🔒 Track</span> <span>📊 Analyze</span> <span>⚡ Predict</span>
+                    </div>
+                    <div class="mt-5 flex gap-6">
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">Visit Architecture →</a>
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">GitHub Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Waste Management -->
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-wrap gap-4">
+                <div class="bg-emerald-50/80 rounded-2xl w-full md:w-56 h-28 flex items-center justify-center border border-emerald-100">
+                    <span class="text-2xl font-bold text-emerald-800">♻️ Waste</span>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold">Waste Management Dashboard</h3>
+                    <p class="text-gray-700 mt-1">Improved waste monitoring with a clean HTML/CSS interface — visualized waste categories and collection patterns, increasing user engagement by 50% and reducing mismanagement by 30%.</p>
+                    <div class="mt-4 flex gap-6">
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">View Project →</a>
+                        <a href="#" class="text-blue-600 font-medium border-b border-blue-200 hover:border-blue-600">GitHub Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training & certs -->
+        <div class="grid md:grid-cols-2 gap-8 mt-10">
+            <div class="glass-card rounded-3xl p-6">
+                <h3 class="text-xl font-bold mb-3">📚 Training</h3>
+                <div class="border-l-4 border-blue-300 pl-4 py-1">
+                    <p class="font-semibold">Object Oriented Programming using C++ · LPU</p>
+                    <p class="text-sm text-gray-600">Hands-on classes, inheritance, polymorphism — improved code modularity by 30%.</p>
+                </div>
+                <div class="mt-4 flex items-center gap-2 text-sm">
+                    <span class="bg-gray-100/90 px-3 py-1 rounded-full">Certificate ↗</span>
+                </div>
+            </div>
+            <div class="glass-card rounded-3xl p-6">
+                <h3 class="text-xl font-bold mb-3">🏅 Certificates & Education</h3>
+                <ul class="text-sm space-y-2">
+                    <li>✓ Master Generative AI – Udemy</li>
+                    <li>✓ Responsive Web Design – FreeCodeCamp</li>
+                    <li>✓ Introduction to Hardware & OS – Coursera</li>
+                    <li>✓ Bits and Bytes of Computer Networking – Coursera</li>
+                    <li class="font-medium mt-2">📍 B.Tech CSE, LPU · CGPA 7.03 (Aug'23 – Present)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="mt-8 text-center text-gray-500 text-sm border-t border-gray-200/60 pt-6">
+            <div class="flex justify-center gap-6">
+                <a href="#" class="hover:text-blue-600">linkedin.com/in/arpitjain67</a> <span>·</span>
+                <a href="#" class="hover:text-blue-600">github.com/Arpit67</a>
+            </div>
+            <p class="mt-3">© 2026 Arpit Jain — Competitive programmer & cloud computing enthusiast</p>
+        </div>
+    </main>
+</body>
+</html>
